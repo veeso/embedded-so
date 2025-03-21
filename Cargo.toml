@@ -1,0 +1,17 @@
+[package]
+name = "embedded-so"
+version = "0.1.0"
+edition = "2024"
+build = "build/main.rs"
+
+[dependencies]
+libc = "0.2"
+libloading = { version = "0.8", optional = true }
+tempfile = { version = "3", optional = true }
+
+[build-dependencies]
+cc = { version = "1", optional = true }
+
+[features]
+default = ["vendored"]
+vendored = ["dep:cc", "dep:libloading", "dep:tempfile"]
