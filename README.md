@@ -1,2 +1,2 @@
-<https://blog.veeso.dev/blog/en/vendoring-c-cpp-dependencies-in-rust/>
+<https://blog.veeso.dev/blog/en/embedding-shared-objects-in-rust/>
 
